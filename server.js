@@ -44,6 +44,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+        pageTitle : 'Projects Page',
+        welcomeText: 'Welcome to Projects Page'
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Application is listening on ${PORT}`);
 });
